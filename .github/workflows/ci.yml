@@ -183,7 +183,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -220,7 +220,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -256,7 +256,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -314,7 +314,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -352,7 +352,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -387,7 +387,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -436,7 +436,7 @@ jobs:
       - name: Initialize environment
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
           cache: npm
           cache-dependency-path: package-lock.json
       - name: Install npm 11.8.0
@@ -528,7 +528,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref || '' }}
       - uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
       - name: Install npm 11.8.0
         run: npm install -g npm@11.8.0
       - name: Install dependencies

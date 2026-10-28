@@ -47,7 +47,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
-          node-version: v24.13.1
+          node-version: v24.22.1
 
       - name: Build PR review context
         id: context
