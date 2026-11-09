@@ -222,8 +222,8 @@ function getSandboxPreviewHtml(sandbox: FakeCloudSandbox) {
 export function createFakeLlmApp(getPort: () => number) {
   const app = express();
   app.use(cors());
-  app.use(express.json({ limit: "50mb" }));
-  app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+  app.use(express.json({ limit: "50mb", inflate: false }));
+  app.use(express.urlencoded({ extended: true, limit: "50mb", inflate: false }));
 
   const cloudSandboxes = new Map<string, FakeCloudSandbox>();
   let hangingWebCrawlState = {
