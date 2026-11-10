@@ -202,3 +202,7 @@ Before every technical task, read docs/AI/GLOBAL_FAILURES.md and docs/AI/PROJECT
 - Keep records append-only. Never store secrets, credentials, private keys, tokens, passwords, personal financial data or raw sensitive provider payloads.
 - If repository instructions require a topic branch, PR, CI or readback, follow them. Report exactly what was and was not verified.
 - These files provide durable repository context only when an AI reads them and has repository access; they cannot force an unrelated AI product to load or obey them.
+
+
+## Mandatory per-PR learning and merge gate
+Before any technical work, read docs/AI/GLOBAL_FAILURES.md, docs/AI/PROJECT_FAILURES.md and docs/AI/LEARNING_LOG.md, plus the canonical incident register linked from the project register. Every PR must append a unique entry to docs/AI/LEARNING_LOG.md, even when both incident and reusable-learning outcomes are NONE. Record evidence, actual verification and unresolved questions. New project incidents must be appended to the project/canonical incident register; reusable lessons must be added to GLOBAL_FAILURES.md and synchronized byte-for-byte to every onboarded repository. Complete the PR checklist and pass the AI failure-memory review check. For every new repository created or adopted, run docs/AI/NEW_REPOSITORY_BOOTSTRAP.md before the first code change. If branch protection does not require the check, explicitly report that merge enforcement is not active.
