@@ -189,3 +189,16 @@ Add `#skip-bugbot` to the PR description for trivial PRs that won't affect end-u
 - Linting or test setup changes
 - Documentation-only changes
 - CI/build configuration updates
+
+
+## Required cross-project failure memory and evidence-before-code protocol
+Before every technical task, read docs/AI/GLOBAL_FAILURES.md and docs/AI/PROJECT_FAILURES.md, then read any canonical project incident register named there. These records supplement this file and never replace existing project-specific rules.
+
+- Inspect the live branch/commit, last known-good state, relevant code, configuration metadata and logs before changing anything.
+- Locate the failing execution stage and distinguish confirmed evidence from hypotheses. If evidence is missing, add safe diagnostics first.
+- Do not repeat a failed fix or modify an already-passed layer without new evidence.
+- Verify the deployed commit and the original user workflow; a successful build or deployment alone is not a functional test.
+- Append project incidents to the project-specific register (or its named canonical register). Add only reusable, anonymized lessons to the shared GLOBAL_FAILURES.md.
+- Keep records append-only. Never store secrets, credentials, private keys, tokens, passwords, personal financial data or raw sensitive provider payloads.
+- If repository instructions require a topic branch, PR, CI or readback, follow them. Report exactly what was and was not verified.
+- These files provide durable repository context only when an AI reads them and has repository access; they cannot force an unrelated AI product to load or obey them.
